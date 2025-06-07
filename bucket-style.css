@@ -1,0 +1,63 @@
+/* bucket-style.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #fdf6e3, #e0f7fa);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    padding: 30px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.bucket-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.bucket-list li {
+    padding: 12px 10px;
+    margin: 10px 0;
+    background: #f0f0f0;
+    border-left: 5px solid #ccc;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.bucket-list li.done {
+    background-color: #d1ffd6;
+    border-left: 5px solid #27ae60;
+    text-decoration: line-through;
+    color: #555;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .bucket-list li {
+        font-size: 16px;
+    }
+}
